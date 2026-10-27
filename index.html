@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Shah Security Guarding | SIA Security Staff Supply, Leeds</title>
+<meta name="description" content="Shah Security Guarding (SSG) supplies SIA-licensed security officers, door supervisors and CCTV operators to security companies, FM firms and contractors across Leeds and Yorkshire.">
+<meta name="theme-color" content="#0b1220">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0b1220;--bg2:#111a2e;--card:#15203a;--line:#24314f;
+  --text:#e9eef8;--muted:#9fb0cc;--gold:#e8b44a;--gold2:#f6d48a;--green:#25d366;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:Archivo,sans-serif;line-height:1.15;letter-spacing:-.01em}
+.eyebrow{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:600}
+
+/* nav */
+header{position:sticky;top:0;z-index:50;background:rgba(11,18,32,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{display:flex;align-items:center;gap:10px;font-family:Archivo;font-weight:800;font-size:1.05rem}
+.logo svg{width:32px;height:32px}
+.logo small{display:block;font-family:Inter;font-weight:500;font-size:.68rem;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
+.links{display:flex;gap:26px;font-size:.92rem;color:var(--muted)}
+.links a:hover{color:var(--text)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:10px;font-weight:600;font-size:.95rem;transition:transform .15s,background .15s}
+.btn:active{transform:scale(.97)}
+.btn-gold{background:var(--gold);color:#16120a}
+.btn-gold:hover{background:var(--gold2)}
+.btn-ghost{border:1px solid var(--line);color:var(--text)}
+.btn-ghost:hover{border-color:var(--gold)}
+.btn-wa{background:var(--green);color:#06210f}
+.menu-btn{display:none;background:none;border:1px solid var(--line);color:var(--text);border-radius:8px;width:42px;height:42px;font-size:1.2rem}
+
+/* hero */
+.hero{position:relative;padding:90px 0 80px;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;background:radial-gradient(700px 400px at 85% 10%,rgba(232,180,74,.16),transparent 60%),radial-gradient(600px 400px at 0% 100%,rgba(56,99,190,.18),transparent 60%)}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.2fr .8fr;gap:50px;align-items:center}
+.hero h1{font-size:clamp(2.1rem,5vw,3.6rem);font-weight:800;margin:14px 0 18px}
+.hero h1 span{color:var(--gold)}
+.hero p.lead{color:var(--muted);font-size:1.1rem;max-width:560px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+.badge{font-size:.8rem;padding:7px 12px;border:1px solid var(--line);border-radius:99px;color:var(--muted);background:rgba(255,255,255,.02)}
+.panel{background:linear-gradient(160deg,var(--card),var(--bg2));border:1px solid var(--line);border-radius:18px;padding:26px}
+.panel h3{font-size:1.1rem;margin-bottom:14px}
+.panel ul{list-style:none;display:grid;gap:12px}
+.panel li{display:flex;gap:12px;align-items:flex-start;font-size:.95rem;color:var(--muted)}
+.panel li b{color:var(--text);font-weight:600}
+.tick{flex:none;width:22px;height:22px;border-radius:50%;background:rgba(232,180,74,.15);color:var(--gold);display:grid;place-items:center;font-size:.75rem;margin-top:2px}
+
+/* sections */
+section{padding:80px 0}
+.head{max-width:640px;margin-bottom:40px}
+.head h2{font-size:clamp(1.7rem,3.5vw,2.4rem);margin:10px 0 12px}
+.head p{color:var(--muted)}
+.alt{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;transition:border-color .2s,transform .2s}
+.card:hover{border-color:rgba(232,180,74,.5);transform:translateY(-3px)}
+.icon{width:46px;height:46px;border-radius:12px;background:rgba(232,180,74,.12);display:grid;place-items:center;margin-bottom:16px}
+.icon svg{width:24px;height:24px;stroke:var(--gold);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.card h3{font-size:1.12rem;margin-bottom:8px}
+.card p{color:var(--muted);font-size:.94rem}
+
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;counter-reset:s}
+.step{padding:22px;border-left:2px solid var(--gold);background:rgba(255,255,255,.02);border-radius:0 12px 12px 0}
+.step:before{counter-increment:s;content:"0" counter(s);font-family:Archivo;font-weight:800;color:var(--gold);font-size:1.4rem;display:block;margin-bottom:6px}
+.step h3{font-size:1rem;margin-bottom:6px}
+.step p{color:var(--muted);font-size:.9rem}
+
+.split{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.list{list-style:none;display:grid;gap:14px;margin-top:20px}
+.list li{display:flex;gap:12px;color:var(--muted)}
+.list li b{color:var(--text)}
+
+.join{background:linear-gradient(135deg,#1b2742,#121b31);border:1px solid var(--line);border-radius:22px;padding:44px;display:grid;grid-template-columns:1.3fr .7fr;gap:30px;align-items:center}
+.join h2{font-size:clamp(1.6rem,3vw,2.2rem);margin:10px 0}
+.join p{color:var(--muted)}
+.req{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+
+/* contact */
+form{display:grid;gap:14px}
+label{font-size:.85rem;color:var(--muted);display:grid;gap:6px}
+input,select,textarea{background:var(--bg);border:1px solid var(--line);color:var(--text);border-radius:10px;padding:13px 14px;font:inherit;font-size:1rem;width:100%}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--gold)}
+textarea{min-height:110px;resize:vertical}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.contact-items{display:grid;gap:14px}
+.ci{display:flex;gap:14px;align-items:center;padding:18px;border:1px solid var(--line);border-radius:14px;background:var(--card)}
+.ci .icon{margin:0}
+.ci small{display:block;color:var(--muted);font-size:.8rem}
+.ci b{font-size:1.02rem;word-break:break-all}
+
+footer{border-top:1px solid var(--line);padding:34px 0;color:var(--muted);font-size:.85rem}
+footer .wrap{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between}
+
+.wa-float{position:fixed;right:18px;bottom:18px;z-index:60;width:58px;height:58px;border-radius:50%;background:var(--green);display:grid;place-items:center;box-shadow:0 10px 30px rgba(0,0,0,.4)}
+.wa-float svg{width:30px;height:30px;fill:#fff}
+
+@media (max-width:900px){
+  .links{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;gap:0;background:var(--bg2);border-bottom:1px solid var(--line)}
+  .links.open{display:flex}
+  .links a{padding:16px 20px;border-top:1px solid var(--line)}
+  .menu-btn{display:block}
+  .nav .btn{display:none}
+  .hero{padding:56px 0}
+  .hero .wrap,.split,.join{grid-template-columns:1fr}
+  .grid{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:1fr 1fr}
+  section{padding:60px 0}
+  .join{padding:28px}
+}
+@media (max-width:560px){
+  .grid,.steps,.row2{grid-template-columns:1fr}
+  .cta .btn{flex:1;justify-content:center}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#" class="logo" aria-label="Shah Security Guarding home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2 4 7v8c0 7.5 5.1 13.4 12 15 6.9-1.6 12-7.5 12-15V7L16 2z" fill="#e8b44a"/><path d="M11 16.5l3.5 3.5 7-7.5" stroke="#16120a" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>Shah Security Guarding<small>SIA Staff Supply · Leeds</small></span>
+    </a>
+    <nav class="links" id="links">
+      <a href="#services">Services</a>
+      <a href="#how">How it works</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="btn btn-gold">Request staff</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Security subcontractor · Leeds &amp; Yorkshire</span>
+      <h1>SIA-licensed officers, <span>supplied when you need them.</span></h1>
+      <p class="lead">Shah Security Guarding supplies vetted security officers, door supervisors and CCTV operators to security companies, facilities management firms and contractors. Short notice cover, ongoing contracts and one-off shifts.</p>
+      <div class="cta">
+        <a href="#contact" class="btn btn-gold">Request staff</a>
+        <a href="https://wa.me/447918100831?text=Hi%20SSG%2C%20I%27d%20like%20to%20request%20security%20staff." class="btn btn-wa" target="_blank" rel="noopener">WhatsApp us</a>
+      </div>
+      <div class="badges">
+        <span class="badge">SIA-licensed staff</span>
+        <span class="badge">Short-notice cover</span>
+        <span class="badge">Registered in England &amp; Wales</span>
+      </div>
+    </div>
+    <aside class="panel">
+      <h3>What we supply</h3>
+      <ul>
+        <li><span class="tick">✓</span><span><b>Security Officers</b> for sites, retail, offices and construction</span></li>
+        <li><span class="tick">✓</span><span><b>Door Supervisors</b> for venues, events and licensed premises</span></li>
+        <li><span class="tick">✓</span><span><b>CCTV Operators</b> for control rooms and monitoring</span></li>
+        <li><span class="tick">✓</span><span><b>Relief cover</b> for sickness, holidays and peak demand</span></li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+<section id="services" class="alt">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Services</span>
+      <h2>Staffing for the security work you've already won</h2>
+      <p>We work behind the scenes as your subcontractor, filling shifts with licensed, briefed and reliable people so you can deliver for your clients.</p>
+    </div>
+    <div class="grid">
+      <div class="card"><div class="icon"><svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.4 9.3 8 11 4.6-1.7 8-6 8-11V5l-8-3z"/></svg></div><h3>Manned Guarding</h3><p>Static officers for commercial sites, offices, retail and warehouses, day or night.</p></div>
+      <div class="card"><div class="icon"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="1"/><circle cx="15" cy="12" r="1"/></svg></div><h3>Door Supervision</h3><p>Licensed door supervisors for bars, venues, events and hospitality.</p></div>
+      <div class="card"><div class="icon"><svg viewBox="0 0 24 24"><path d="M3 7h13l3 3-3 3H3z"/><path d="M8 13v6M5 19h6"/></svg></div><h3>CCTV Operators</h3><p>Public Space Surveillance licensed operators for control rooms and remote monitoring.</p></div>
+      <div class="card"><div class="icon"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V9l7-5 7 5v12"/><path d="M9 21v-6h6v6"/></svg></div><h3>Construction Sites</h3><p>Site security, gatehouse cover and out-of-hours protection for contractors.</p></div>
+      <div class="card"><div class="icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h3>Relief &amp; Short Notice</h3><p>Fast cover when an officer drops out, so your client never sees a gap.</p></div>
+      <div class="card"><div class="icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></svg></div><h3>Events</h3><p>Stewards and door staff for one-off events, festivals and seasonal peaks.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">How it works</span>
+      <h2>From request to boots on site</h2>
+    </div>
+    <div class="steps">
+      <div class="step"><h3>Send the shift</h3><p>Site, dates, hours, licence type and any site requirements.</p></div>
+      <div class="step"><h3>We confirm</h3><p>We match licensed staff and confirm names and licence details.</p></div>
+      <div class="step"><h3>Officer on site</h3><p>Briefed, in uniform and on time, reporting to your supervisor.</p></div>
+      <div class="step"><h3>Simple invoicing</h3><p>Clear timesheets and invoices on agreed terms.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="alt">
+  <div class="wrap split" style="align-items:start">
+    <div>
+      <span class="eyebrow">Contact</span>
+      <h2 style="font-size:clamp(1.7rem,3.5vw,2.4rem);margin:10px 0 12px">Need staff? Tell us the shift.</h2>
+      <p style="color:var(--muted);margin-bottom:24px">Fill in the form and it opens a ready-made WhatsApp message to us, or contact us directly.</p>
+      <div class="contact-items">
+        <a class="ci" href="https://wa.me/447918100831" target="_blank" rel="noopener"><div class="icon"><svg viewBox="0 0 24 24"><path d="M21 12a9 9 0 0 1-13.4 7.8L3 21l1.3-4.4A9 9 0 1 1 21 12z"/></svg></div><div><small>WhatsApp (messages only)</small><b>07918 100831</b></div></a>
+        <a class="ci" href="mailto:info@shahsecurityguarding.com"><div class="icon"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></div><div><small>Email</small><b>info@shahsecurityguarding.com</b></div></a>
+        <div class="ci"><div class="icon"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div><div><small>Based in</small><b>Leeds, West Yorkshire</b></div></div>
+      </div>
+    </div>
+    <form class="panel" id="enquiry">
+      <div class="row2">
+        <label>Your name<input name="name" required></label>
+        <label>Company<input name="company"></label>
+      </div>
+      <div class="row2">
+        <label>Staff needed<select name="role"><option>Security Officer</option><option>Door Supervisor</option><option>CCTV Operator</option><option>Mixed / not sure</option></select></label>
+        <label>Number of officers<input name="qty" type="number" min="1" value="1"></label>
+      </div>
+      <div class="row2">
+        <label>Site location<input name="loc" placeholder="e.g. Leeds LS1"></label>
+        <label>Start date<input name="date" type="date"></label>
+      </div>
+      <label>Shift details<textarea name="msg" placeholder="Hours, duration, site requirements…"></textarea></label>
+      <button class="btn btn-gold" type="submit" style="justify-content:center;border:0;cursor:pointer">Send via WhatsApp</button>
+      <a class="btn btn-ghost" id="emailBtn" style="justify-content:center" href="#">Send via email instead</a>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="yr"></span> Shah Security Guarding Ltd. Registered in England &amp; Wales, company no. 17030073.</span>
+    <span>Leeds, United Kingdom · info@shahsecurityguarding.com</span>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/447918100831" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5 2.5 1 3 .8 3.6.7.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.4zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>
+</a>
+
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+const links=document.getElementById('links');
+document.getElementById('menuBtn').onclick=()=>links.classList.toggle('open');
+links.querySelectorAll('a').forEach(a=>a.onclick=()=>links.classList.remove('open'));
+const f=document.getElementById('enquiry');
+function body(){
+  const d=Object.fromEntries(new FormData(f));
+  return `Staff request — Shah Security Guarding\nName: ${d.name}\nCompany: ${d.company||'-'}\nRole: ${d.role}\nOfficers: ${d.qty}\nLocation: ${d.loc||'-'}\nStart: ${d.date||'-'}\nDetails: ${d.msg||'-'}`;
+}
+f.onsubmit=e=>{e.preventDefault();window.open('https://wa.me/447918100831?text='+encodeURIComponent(body()),'_blank');};
+document.getElementById('emailBtn').onclick=e=>{e.preventDefault();if(!f.reportValidity())return;location.href='mailto:info@shahsecurityguarding.com?subject='+encodeURIComponent('Staff request')+'&body='+encodeURIComponent(body());};
+</script>
+</body>
+</html>
