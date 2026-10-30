@@ -36,12 +36,20 @@
       "@type": "WebSite",
       "@id": "https://shahsecurityguarding.com/#website",
       "name": "SHAH SECURITY GUARDING",
-      "alternateName": ["Shah Security Guarding", "SSG"],
+      "alternateName": [
+        "Shah Security Guarding",
+        "SSG"
+      ],
       "url": "https://shahsecurityguarding.com/",
-      "publisher": {"@id": "https://shahsecurityguarding.com/#org"}
+      "publisher": {
+        "@id": "https://shahsecurityguarding.com/#org"
+      }
     },
     {
-      "@type": ["Organization", "LocalBusiness"],
+      "@type": [
+        "Organization",
+        "LocalBusiness"
+      ],
       "@id": "https://shahsecurityguarding.com/#org",
       "name": "SHAH SECURITY GUARDING",
       "legalName": "SHAH SECURITY GUARDING SSG LTD",
@@ -51,10 +59,95 @@
       "image": "https://shahsecurityguarding.com/og-image.png",
       "description": "Leeds security company supplying SIA-licensed security officers, door supervisors, CCTV operators and relief cover to security firms, FM companies, contractors and venues.",
       "email": "info@shahsecurityguarding.com",
-      "identifier": {"@type": "PropertyValue", "propertyID": "Companies House number", "value": "17030073"},
-      "address": {"@type": "PostalAddress", "addressLocality": "Leeds", "addressRegion": "West Yorkshire", "addressCountry": "GB"},
-      "areaServed": ["Leeds", "Bradford", "Wakefield", "West Yorkshire", "Yorkshire"],
-      "knowsAbout": ["Manned guarding", "Door supervision", "CCTV monitoring", "Construction site security", "Event security"]
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Companies House number",
+        "value": "17030073"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Leeds",
+        "addressRegion": "West Yorkshire",
+        "addressCountry": "GB"
+      },
+      "areaServed": [
+        "Leeds",
+        "Bradford",
+        "Wakefield",
+        "Huddersfield",
+        "Halifax",
+        "Harrogate",
+        "West Yorkshire",
+        "Yorkshire"
+      ],
+      "knowsAbout": [
+        "Manned guarding",
+        "Door supervision",
+        "CCTV monitoring",
+        "Construction site security",
+        "Event security"
+      ],
+      "sameAs": [
+        "https://find-and-update.company-information.service.gov.uk/company/17030073"
+      ],
+      "foundingDate": "2026-02-12",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "email": "info@shahsecurityguarding.com",
+        "url": "https://wa.me/447918100831",
+        "areaServed": "GB",
+        "availableLanguage": [
+          "English",
+          "Urdu"
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://shahsecurityguarding.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What does SHAH SECURITY GUARDING do?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We supply SIA-licensed security officers, door supervisors and CCTV operators to security companies, FM firms, contractors and venues across Leeds and Yorkshire, as a subcontractor."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are all your officers SIA licensed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Every officer we deploy holds a valid SIA licence for the role, and we check licences before each placement."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you cover shifts at short notice?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Message us on WhatsApp with the site, hours and licence type and we'll confirm cover as quickly as possible."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which areas do you cover?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Leeds, Bradford, Wakefield, Huddersfield, Halifax, Harrogate and the wider Yorkshire area."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I apply for a security job with SSG?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use the job application form on this page. You'll need an SIA licence (or one in progress) and the right to work in the UK."
+          }
+        }
+      ]
     }
   ]
 }
@@ -96,8 +189,9 @@ header{position:sticky;top:0;z-index:50;background:rgba(11,18,32,.88);backdrop-f
 .hero{position:relative;padding:90px 0 80px;overflow:hidden}
 .hero:before{content:"";position:absolute;inset:0;background:radial-gradient(700px 400px at 85% 10%,rgba(232,180,74,.16),transparent 60%),radial-gradient(600px 400px at 0% 100%,rgba(56,99,190,.18),transparent 60%)}
 .hero .wrap{position:relative;display:grid;grid-template-columns:1.2fr .8fr;gap:50px;align-items:center}
-.hero h1{font-size:clamp(2.1rem,5vw,3.6rem);font-weight:800;margin:14px 0 18px}
-.hero h1 span{color:var(--gold)}
+.hero h1.eyebrow{font-family:Inter,system-ui,sans-serif;font-size:.78rem;line-height:1.6;font-weight:600;letter-spacing:.14em}
+.hero-title{font-family:Archivo,sans-serif;line-height:1.15;letter-spacing:-.01em;font-size:clamp(2.1rem,5vw,3.6rem);font-weight:800;margin:14px 0 18px}
+.hero-title span{color:var(--gold)}
 .hero p.lead{color:var(--muted);font-size:1.1rem;max-width:560px}
 .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
 .badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
@@ -158,6 +252,13 @@ label.chk{display:flex;align-items:center;gap:8px;color:var(--text);font-size:.9
 label.chk input{width:18px;height:18px;padding:0;accent-color:var(--gold)}
 label.consent{color:var(--muted);font-size:.85rem;align-items:flex-start}
 label.consent input{margin-top:2px;flex:none}
+.faq{display:grid;gap:12px;max-width:820px}
+.faq details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+.faq summary{cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:12px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:after{content:"+";color:var(--gold);font-size:1.3rem;line-height:1}
+.faq details[open] summary:after{content:"\2013"}
+.faq details p{color:var(--muted);margin-top:10px;font-size:.95rem}
 .form-msg{font-size:.92rem;min-height:1.2em}
 .form-msg.ok{color:#4ade80}.form-msg.err{color:#f87171}
 .invalid{border-color:#f87171!important}
@@ -204,6 +305,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between}
     <nav class="links" id="links">
       <a href="#services">Services</a>
       <a href="#how">How it works</a>
+      <a href="#about">About</a>
       <a href="#jobs">Jobs</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -216,8 +318,8 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between}
 <section class="hero">
   <div class="wrap">
     <div>
-      <span class="eyebrow">Security subcontractor · Leeds &amp; Yorkshire</span>
-      <h1>SIA-licensed officers, <span>supplied when you need them.</span></h1>
+      <h1 class="eyebrow">SHAH SECURITY GUARDING · Security subcontractor, Leeds &amp; Yorkshire</h1>
+      <p class="hero-title">SIA-licensed officers, <span>supplied when you need them.</span></p>
       <p class="lead">SHAH SECURITY GUARDING (SSG) is a Leeds-based security company supplying vetted security officers, door supervisors and CCTV operators to security companies, facilities management firms and contractors. Short notice cover, ongoing contracts and one-off shifts.</p>
       <div class="cta">
         <a href="#contact" class="btn btn-gold">Request staff</a>
@@ -270,6 +372,42 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between}
       <div class="step"><h3>We confirm</h3><p>We match licensed staff and confirm names and licence details.</p></div>
       <div class="step"><h3>Officer on site</h3><p>Briefed, in uniform and on time, reporting to your supervisor.</p></div>
       <div class="step"><h3>Simple invoicing</h3><p>Clear timesheets and invoices on agreed terms.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="alt">
+  <div class="wrap split" style="align-items:start">
+    <div>
+      <span class="eyebrow">About us</span>
+      <h2 style="font-size:clamp(1.7rem,3.5vw,2.4rem);margin:10px 0 12px">About SHAH SECURITY GUARDING</h2>
+      <p style="color:var(--muted);margin-bottom:14px">SHAH SECURITY GUARDING (SSG) is a security company based in Leeds, West Yorkshire. We work as a subcontractor, supplying SIA-licensed security officers, door supervisors and CCTV operators to security companies, facilities management firms, main contractors and event organisers.</p>
+      <p style="color:var(--muted)">Our team is led by SIA licence holders with hands-on experience in door supervision and CCTV control rooms, so we understand what your clients expect on site and how much a missed shift costs.</p>
+    </div>
+    <div class="panel">
+      <h3>Company details</h3>
+      <ul>
+        <li><span class="tick">✓</span><span><b>Registered name:</b> SHAH SECURITY GUARDING SSG LTD</span></li>
+        <li><span class="tick">✓</span><span><b>Company number:</b> <a href="https://find-and-update.company-information.service.gov.uk/company/17030073" target="_blank" rel="noopener" style="text-decoration:underline">17030073</a> (England &amp; Wales)</span></li>
+        <li><span class="tick">✓</span><span><b>Based in:</b> Leeds, West Yorkshire</span></li>
+        <li><span class="tick">✓</span><span><b>Areas covered:</b> Leeds, Bradford, Wakefield, Huddersfield, Halifax, Harrogate and wider Yorkshire</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">FAQ</span>
+      <h2>Common questions</h2>
+    </div>
+    <div class="faq">
+      <details><summary>What does SHAH SECURITY GUARDING do?</summary><p>We supply SIA-licensed security officers, door supervisors and CCTV operators to security companies, FM firms, contractors and venues across Leeds and Yorkshire, as a subcontractor.</p></details>
+      <details><summary>Are all your officers SIA licensed?</summary><p>Yes. Every officer we deploy holds a valid SIA licence for the role, and we check licences before each placement.</p></details>
+      <details><summary>Can you cover shifts at short notice?</summary><p>Yes. Message us on WhatsApp with the site, hours and licence type and we'll confirm cover as quickly as possible.</p></details>
+      <details><summary>Which areas do you cover?</summary><p>Leeds, Bradford, Wakefield, Huddersfield, Halifax, Harrogate and the wider Yorkshire area.</p></details>
+      <details><summary>How do I apply for a security job with SSG?</summary><p>Use the job application form on this page. You'll need an SIA licence (or one in progress) and the right to work in the UK.</p></details>
     </div>
   </div>
 </section>
